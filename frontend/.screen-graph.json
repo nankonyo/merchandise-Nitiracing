@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/Merchandise/Merchandise.jsx",
+      "label": "Merchandise",
+      "routes": [
+        "/"
+      ],
+      "dataModelId": "333:753",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/Search/Search.jsx",
+      "label": "Search",
+      "routes": [
+        "/search"
+      ],
+      "dataModelId": "347:1053"
+    },
+    {
+      "id": "src/screens/List/List.jsx",
+      "label": "List",
+      "routes": [
+        "/list"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src/screens/Search/sections/HeaderSection/HeaderSection.jsx:66:8-to-src/screens/Merchandise/Merchandise.jsx",
+      "source": "src/screens/Search/Search.jsx",
+      "target": "src/screens/Merchandise/Merchandise.jsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" aria-label=\"Nitiracing home\">\n          <img\n            className=\"relative w-[157px] h-14 aspect-[2.81] object-cover\"\n            alt=\"Nitiracing\"\n            src=\"https://c.animaapp.com/71eaCrAH/img/image-30@2x.png\"\n          />\n        </a>",
+          "line": 66,
+          "endLine": 72,
+          "column": 8,
+          "endColumn": 12,
+          "sourceFile": "src/screens/Search/sections/HeaderSection/HeaderSection.jsx"
+        }
+      }
+    }
+  ]
+}
