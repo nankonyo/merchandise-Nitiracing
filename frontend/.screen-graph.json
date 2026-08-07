@@ -1,13 +1,36 @@
 {
   "nodes": [
     {
-      "id": "src/screens/Merchandise/Merchandise.jsx",
-      "label": "Merchandise",
+      "id": "src/screens/Index/Index.jsx",
+      "label": "Index",
       "routes": [
         "/"
       ],
-      "dataModelId": "333:753",
       "isRoot": true
+    },
+    {
+      "id": "src/screens/Home1/Home1.jsx",
+      "label": "Home1",
+      "routes": [
+        "/home1"
+      ],
+      "dataModelId": "316:338"
+    },
+    {
+      "id": "src/screens/Home2/Home2.jsx",
+      "label": "Home2",
+      "routes": [
+        "/home2"
+      ],
+      "dataModelId": "333:753"
+    },
+    {
+      "id": "src/screens/Home3/Home3.jsx",
+      "label": "Home3",
+      "routes": [
+        "/home3"
+      ],
+      "dataModelId": "407:344"
     },
     {
       "id": "src/screens/Search/Search.jsx",
@@ -27,9 +50,9 @@
   ],
   "edges": [
     {
-      "id": "src/screens/Search/sections/HeaderSection/HeaderSection.jsx:66:8-to-src/screens/Merchandise/Merchandise.jsx",
+      "id": "src/screens/Search/sections/HeaderSection/HeaderSection.jsx:66:8-to-src/screens/Index/Index.jsx",
       "source": "src/screens/Search/Search.jsx",
-      "target": "src/screens/Merchandise/Merchandise.jsx",
+      "target": "src/screens/Index/Index.jsx",
       "data": {
         "viaRoute": "/",
         "trigger": {

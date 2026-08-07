@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import { Home, House, Store, LayoutGrid, Search, List, Package } from "lucide-react";
 
 const routes = [
-  { to: "/home1", title: "Home 1", desc: "Homepage asli", icon: "🏠" },
-  { to: "/home2", title: "Home 2", desc: "Homepage look 2", icon: "🏠" },
-  { to: "/home3", title: "Home 3", desc: "Homepage look 3", icon: "🏠" },
-  { to: "/products", title: "All Products", desc: "Katalog produk", icon: "🛍️" },
-  { to: "/product/essential-t-shirt", title: "Product Detail", desc: "Detail produk", icon: "📦" },
-  { to: "/search", title: "Search", desc: "Cari produk", icon: "🔍" },
-  { to: "/list", title: "Navigation List", desc: "Menu navigasi", icon: "🧭" },
+  { to: "/home1", title: "Home 1", desc: "Homepage asli", Icon: Home },
+  { to: "/home2", title: "Home 2", desc: "Homepage look 2", Icon: House },
+  { to: "/home3", title: "Home 3", desc: "Homepage look 3", Icon: Store },
+  { to: "/products", title: "All Products", desc: "Katalog produk", Icon: LayoutGrid },
+  { to: "/product/essential-t-shirt", title: "Product Detail", desc: "Detail produk", Icon: Package },
+  { to: "/search", title: "Search", desc: "Cari produk", Icon: Search },
+  { to: "/list", title: "Navigation List", desc: "Menu navigasi", Icon: List },
 ];
 
 export const Index = () => (
@@ -21,24 +22,22 @@ export const Index = () => (
       </p>
     </header>
     <nav className="grid w-full max-w-4xl grid-cols-3 gap-4">
-      {routes.map((route) => (
+      {routes.map(({ to, title, desc, Icon }) => (
         <Link
-          key={route.to}
-          to={route.to}
+          key={to}
+          to={to}
           className="group flex flex-col items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-6 transition hover:border-[#006ee3] hover:bg-white/10"
         >
-          <span className="text-3xl" aria-hidden="true">
-            {route.icon}
-          </span>
+          <Icon className="h-7 w-7 text-white" strokeWidth={1.75} aria-hidden="true" />
           <span className="flex flex-col gap-1">
             <span className="[font-family:'Tektur',Helvetica] text-lg font-bold">
-              {route.title}
+              {title}
             </span>
             <span className="[font-family:'Mulish',Helvetica] text-sm text-white/60">
-              {route.desc}
+              {desc}
             </span>
             <span className="[font-family:'Mulish',Helvetica] text-xs text-[#006ee3]">
-              {route.to}
+              {to}
             </span>
           </span>
         </Link>
