@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 
 const pages = [
-  { to: "/", label: "/ — Homepage" },
+  { to: "/", label: "/ — Index menu" },
+  { to: "/home1", label: "/home1 — Home 1" },
+  { to: "/home2", label: "/home2 — Home 2" },
+  { to: "/home3", label: "/home3 — Home 3" },
   { to: "/products", label: "/products — All Products" },
   { to: "/search", label: "/search — Search" },
   { to: "/list", label: "/list — Navigation list" },

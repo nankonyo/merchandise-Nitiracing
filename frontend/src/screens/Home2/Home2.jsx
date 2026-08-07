@@ -1,7 +1,7 @@
 import { HeroSection } from "./sections/HeroSection/HeroSection";
 import { StorefrontContentSection } from "./sections/StorefrontContentSection/StorefrontContentSection";
 
-export const Merchandise = () => {
+export const Home2 = () => {
   return (
     <main
       className="relative flex flex-col items-center overflow-hidden bg-black"
